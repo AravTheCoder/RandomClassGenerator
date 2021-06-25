@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+  <html lang="en-US" dir="ltr">
+    <head>
+      <!--Section: Head-->
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Class Name Generator</title>
+      <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQQNU2oEoAyoUigzhBSVNfHPoaLQ4fjVU9BxEvipb_KRQIklhjjFvhij_CTwcYzSXO2U4&usqp=CAU">
+      <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <!--Section: Container-->
+      <div class="container">
+        <div class="header">
+          <h1>Class Name Generator</h1>
+        </div>
+        <!--Section: Inner-->
+        <div class="container-inner">
+          <p id="class">TqqNU2</p>
+        </div>
+        <!--Section: Button-->
+        <div class="button">
+         <input type="button" value="New Class/ID" onclick="classNew()"></input>
+        </div>
+    </div>
+    <!--Section:JavaScript-->
+      <script>
+        document.getElementById("class").innerHTML = create_class_new(5)
+
+        function create_class_new(class_length){
+          var random_class = '';
+          var characters = '1234567890QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm'
+          for(var i, i = 0; i < class_length; i++){
+            random_class += characters.charAt(Math.floor(Math.random() * characters.length))
+          }
+          return random_class
+        }
+
+        function classNew(){
+          window.location.reload();
+        } 
+      </script>
+    </body>
+  </html>

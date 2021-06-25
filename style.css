@@ -1,0 +1,58 @@
+:root{
+  --background: linear-gradient(to right, #396afc, #2948ff);
+  --main: #396afc;
+}
+*{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+h1{
+  font-weight: 400;
+  text-decoration: underline;
+  text-underline-position: below;
+  text-align: center;
+}
+body{
+  height: 100%;
+  width: 100%;
+  background: var(--background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container{
+  max-width: 400px;
+  background: #fff;
+  padding: 20px;
+  margin: 150px auto;
+  border-radius: 5px;
+  box-shadow: #888888;
+  border: 1px solid #000;
+}
+input[type="button"]{
+  color: white;
+  background: var(--main);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+.button{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.container-inner{
+  background-color: #fafafa;
+  border: 1px solid #000;
+  padding-left: 5px;
+  padding-top: 7px;
+  padding-right: 7px;
+  padding-bottom: 7px;
+  margin-top: 10px;
+}
